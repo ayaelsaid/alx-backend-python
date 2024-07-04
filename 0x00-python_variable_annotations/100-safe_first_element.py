@@ -8,9 +8,6 @@ from typing import Sequence, Union, Any
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
-    This function returns the first element of a sequence, or None if the
-        sequence is empty.
-
     Args:
     lst (Sequence): The sequence to process.
 
