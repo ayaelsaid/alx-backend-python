@@ -1,24 +1,29 @@
 #!/usr/bin/env python3
-"""module provides Safely retrieves the value for a given key in a mapping"""
-from typing import Union, Mapping, Any, TypeVar
+"""
+This is a module that provides a function for safely getting a value from
+    a mapping.
+"""
+from typing import Any, Mapping, Union, TypeVar
 
 T = TypeVar('T')
-Result = Union[Any, T]
-Default = Union[T, None]
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, key: Any, default: Default = None) -> Result:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
-    Safely retrieves the value for a given key in a mapping,
-    or returns a default value if the key is not present.
+    This function gets the value for a given key in a mapping, or returns
+        a default value if the key is not in the mapping.
 
     Parameters:
-    dct (Mapping): The mapping to retrieve the value from.
-    key (Any): The key whose value to retrieve.
-    default (Union[T, None]): The default value to return if the key is not found.
+    dct (Mapping): The mapping to get the value from.
+    key (Any): The key to look up in the mapping.
+    default (Union[T, None]): The default value to return if the key is not
+        in the mapping.
 
     Returns:
-    Union[T, Any]: The value corresponding to the key if found, otherwise the default value.
+    Union[Any, T]: The value for the key in the mapping, or the default
+        value if the key is not in the mapping.
     """
     if key in dct:
         return dct[key]
