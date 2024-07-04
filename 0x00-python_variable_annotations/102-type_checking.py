@@ -2,9 +2,8 @@
 """type-annotated function"""
 from typing import List
 
-
 def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
-    """apply any necessary changes"""
+    """Apply zoom factor to each item in the list."""
     zoomed_in: List[int] = [
         item for item in lst
         for i in range(factor)
