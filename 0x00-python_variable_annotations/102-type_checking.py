@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""
-This is a module that provides a function for zooming in on a tuple.
-"""
+"""module that provides a function for zooming in on a tuple."""
 from typing import List, Tuple
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     This function takes a tuple and a zoom factor, and returns a new list
         with the elements of the tuple repeated according to the zoom factor.
@@ -15,7 +13,7 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List:
     Returns:
     List: A new list with the elements of the tuple
     """
-    zoomed_in: List[int] = [
+    zoomed_in: List = [
         item for item in lst
         for i in range(int(factor))
     ]
