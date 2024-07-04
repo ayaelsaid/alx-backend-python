@@ -6,7 +6,7 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
     """Apply zoom factor to each item in the tuple."""
     zoomed_in: List[int] = [
         item for item in lst
-        for _ in range(factor)
+        for i in range(int(factor))
     ]
     return zoomed_in
 
