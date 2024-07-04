@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """module provides Safely retrieves the value for a given key in a mapping"""
 from typing import Union, Mapping, Any, TypeVar
+
 T = TypeVar('T')
 Result = Union[Any, T]
 Default = Union[T, None]
