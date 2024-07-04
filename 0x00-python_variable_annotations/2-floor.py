@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+"""type-annotated function"""
 
 
 import math
-"""type-annotated function"""
 
 
 def floor(n: float) -> int:
