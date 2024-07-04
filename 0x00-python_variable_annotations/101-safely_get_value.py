@@ -13,6 +13,7 @@ def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
     This function returns a default value from a dictionary. if key found,
          or None if the key is not found
+    
     Args:
     dct (Mapping): The dictionary to retrieve values from.
     key (Any): The key to look up in the dictionary.
