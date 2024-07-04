@@ -11,7 +11,7 @@ Def = Union[T, None]
 
 def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
-    Safely retrieves a value from a dictionary.
+    This function Safely retrieves a value from a dictionary.
 
     Parameters:
     - dct (Mapping): The dictionary to retrieve values from.
