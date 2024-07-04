@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """
-module that provides a function for returning the first element
-    of a list, or None if the list is empty
-"""
+module provides a function to return the first element of a list, or None if the list is empty"""
 from typing import Sequence, Union
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-"""
+    """
     This function returns the first element of a sequence, or None if the
         sequence is empty.
 
