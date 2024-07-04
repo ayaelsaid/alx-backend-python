@@ -11,15 +11,15 @@ Def = Union[T, None]
 
 def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
-    This function Safely retrieves a value from a dictionary.
-
-    Parameters:
-    - dct (Mapping): The dictionary to retrieve values from.
-    - key (Any): The key to look up in the dictionary.
-    - default (Union[T, None]): The default value to return if the key is not found (default is None).
+         This function returns  a value from a dictionary. if key found,
+         or None if the key is not found
+    Args:
+    dct (Mapping): The dictionary to retrieve values from.
+    key (object): The key to look up in the dictionary.
+    default (Union[T, None]): The default value to return if the key is not found (default is None).
 
     Returns:
-    - Union[T, None]: The value corresponding to the key in the dictionary, or the default value if key is not found.
+    Union[T, None]: The value corresponding to the key in the dictionary, or the default value if key is not found.
     """
 
     if key in dct:
