@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """type-annotated function"""
-from typing import List
+from typing import List, Tuple
 
-def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
-    """Apply zoom factor to each item in the list."""
+def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
+    """Apply zoom factor to each item in the tuple."""
     zoomed_in: List[int] = [
         item for item in lst
-        for i in range(factor)
+        for _ in range(factor)
     ]
     return zoomed_in
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
