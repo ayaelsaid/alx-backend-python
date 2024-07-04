@@ -5,11 +5,9 @@ module provides Safely retrieves the value for a given key in a mapping
 from typing import Any, Mapping, Union, TypeVar
 
 T = TypeVar('T')
-Res = Union[Any, T]
-Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
+def safely_get_value(dct: Mapping, key: Any, default: Union[T, None]) -> Union[Any, T]:
     """
     This function returns a default value from a dictionary. if key found,
          or None if the key is not found
