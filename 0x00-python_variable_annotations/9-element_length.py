@@ -4,5 +4,5 @@ from typing import List, Tuple, Sequence
 
 
 def element_length(lst: List[Tuple[Sequence, int]]) -> List[Tuple[Sequence, int]]:
-    """return values with the appropriate types"""
+    """Returns a list of tuples of sequence and int"""
     return [(i, len(i)) for i, _ in lst]
