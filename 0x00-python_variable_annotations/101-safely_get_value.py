@@ -5,11 +5,11 @@ module provides Safely retrieves the value for a given key in a mapping
 from typing import Any, Mapping, Union, TypeVar
 
 T = TypeVar('T')
-Result = Union[Any, T]
-Default = Union[T, None]
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, key: Any, default: Default = None) -> Result:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
     Safely retrieves a value from a dictionary.
 
