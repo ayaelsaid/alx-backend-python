@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-module provides a function to return the first element of a list, or None if the list is empty"""
+module provides a function to return the first element of a list,
+    or None if the list is empty
+"""
 from typing import Sequence, Union
 
 
